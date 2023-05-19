@@ -1,4 +1,4 @@
-import "../css/modal.css";
+// import "./css/modal.css";
 /**
  * Generates a Modal in your HTML.
  *
@@ -48,7 +48,18 @@ export default class Modal {
         this.modalContainer = this.spawn();
 
         this.setListeners();
+
+        this.loadCss();
         console.log("successfully spawned modal!");
+    }
+
+    private loadCss() {
+        const link = document.createElement("link");
+        link.href = "/simple-modal/css/modal.css";
+        link.type = "text/css";
+        link.rel = "stylesheet";
+
+        document.getElementsByTagName("head")[0].appendChild(link);
     }
 
     private setListeners() {

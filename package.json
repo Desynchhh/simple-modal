@@ -5,9 +5,9 @@
   "main": "./js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-scss": "sass --watch ./scss/modal.scss ./css/modal.css",
+    "watch-scss": "sass --watch ./scss/modal.scss ./simple-modal/css/modal.css",
     "watch-ts": "tsc --watch",
-    "build": "tsc && sass ./scss/modal.scss ./css/modal.css"
+    "build": "tsc && sass ./scss/modal.scss ./simple-modal/css/modal.css"
   },
   "repository": {
     "type": "git",
