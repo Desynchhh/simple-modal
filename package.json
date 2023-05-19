@@ -1,0 +1,33 @@
+{
+  "name": "@desynch/simple-modal",
+  "version": "1.0.0",
+  "description": "A simple modal taking care of most the boilerplate JS and HTML.",
+  "main": "./js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-scss": "sass --watch ./scss/modal.scss ./css/modal.css",
+    "watch-ts": "tsc --watch",
+    "build": "tsc && sass ./scss/modal.scss ./css/modal.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Desynchhh/simple-modal.git"
+  },
+  "keywords": [
+    "modal",
+    "simple"
+  ],
+  "author": "Desynch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Desynchhh/simple-modal/issues"
+  },
+  "files": [
+    "./css/*.css"
+  ],
+  "homepage": "https://github.com/Desynchhh/simple-modal#readme",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "typescript": "^5.0.4"
+  }
+}
